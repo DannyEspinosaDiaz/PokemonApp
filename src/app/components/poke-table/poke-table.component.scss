@@ -10,4 +10,69 @@ table{
   min-width: 80%;
   margin: auto;
   text-align: center;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(128,128,128,1);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(128,128,128,1);
+  box-shadow: 0px 0px 14px 0px rgba(128,128,128,1);
+}
+
+.mat-header-cell{
+  color: #fff;
+  background-color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mat-row{
+  transition: transform .1s; /* Animation */
+}
+
+.mat-row:nth-child(even){
+  background-color: #fff;
+}
+
+.mat-row:nth-child(odd){
+  background-color: #9b9b9b;
+  & .mat-cell{
+    color: #fff;
+  }
+}
+
+.mat-cell::first-letter{
+  text-transform: uppercase;
+}
+
+.mat-row:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+::ng-deep.mat-paginator{
+  width: 80%;
+  margin: auto;
+}
+
+.mat-form.field{
+  font-size: 13px;
+  width: 20%;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+::ng-deep.mat-form-field-label{
+  color: #9b9b9b !important;
+}
+
+::ng-deep.mat-form-field-underline{
+  background-color: #9b9b9b !important;
+}
+
+::ng-deep.mat-form-field-ripple{
+  background-color: blue !important;  
+}
+
+input{
+  color: #000 !important;
+  border-radius: 5;
+  
 }
