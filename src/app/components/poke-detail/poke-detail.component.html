@@ -1,1 +1,29 @@
-<p>poke-detail works!</p>
+<mat-card class="card">
+
+  <mat-card-header>
+    <img mat-card-avatar class="header-image" src="{{pokemonImg}}">
+    <mat-card-title>{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image src="{{pokemonImg}}" alt="Pokemon">
+  <mat-card-content>
+    <mat-chip-list>
+      <mat-chip>Altura: {{pokemon.height}}</mat-chip>
+      <mat-chip>Peso: {{pokemon.weight}}</mat-chip>
+      <mat-chip>Experiencia: {{pokemon.base_experience}}</mat-chip>
+      <mat-chip>Tipo: {{pokemonType}}</mat-chip>
+      <mat-chip>Vida: {{pokemonLife}}</mat-chip>
+      <mat-chip>Velocidad: {{pokemonSpeed}}</mat-chip>
+      <mat-chip>Ataque: {{pokemonAttack}}</mat-chip>
+      <mat-chip>Ataque Especial: {{pokemonAttackSpecial}}</mat-chip>
+      <mat-chip>Defensa: {{pokemonDefense}}</mat-chip>
+      <mat-chip>Defensa Especial: {{pokemonDefenseSpecial}}</mat-chip>
+      <mat-chip>Habilidad: {{pokemonAbility}}</mat-chip>
+      <mat-chip>Movimiento 1 : {{pokemonMoves1}}</mat-chip>
+      <mat-chip>Movimiento 2: {{pokemonMoves2}}</mat-chip>
+      <mat-chip>Movimiento 3: {{pokemonMoves3}}</mat-chip>
+      <mat-chip>Movimiento 4: {{pokemonMoves4}}</mat-chip>
+    </mat-chip-list>    
+  </mat-card-content>
+</mat-card>
